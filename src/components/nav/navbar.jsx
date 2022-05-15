@@ -10,7 +10,7 @@ const Navbar =()=>{
                 <li className="nav-menu_li"><a href="#">Inicio</a></li>
                 <li className="nav-menu_li"><a href="#">Productos</a></li>
                 <li className="nav-menu_li"><a href="#">Categorias</a></li>
-                <li className="nav-menu_li"><a href="#">Servicio</a></li>
+                <li className="nav-menu_li"><a href="#">Servicios</a></li>
             </ul>
             <button className="btn-interaz" ><i class="fa-solid fa-cart-shopping"></i></button>
             <button  className="btn-interaz"><i class="fa-solid fa-user"></i></button>
