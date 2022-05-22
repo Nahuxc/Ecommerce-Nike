@@ -1,0 +1,43 @@
+.box-btnprod{
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    border-color: #ebebeb;
+    border-style: solid;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.btn-rest{
+    background-color: hsl(208, 100%, 97%);
+    border: none;
+    border-radius: 5px;
+    width: 30%;
+    font-size: 15px;
+    color: #0088ff;
+    padding: 5px;
+    font-family: sans-serif;
+    font-weight: 800;
+}
+
+.btn-sum{
+    background-color: hsl(208, 100%, 97%);
+    border: none;
+    border-radius: 5px;
+    width: 30%;
+    padding: 5px;
+    font-size: 15px;
+    color: #0088ff;
+    font-family: sans-serif;
+    font-weight: 800;
+}
+
+.span-num-prod{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 5px;
+    font-family: sans-serif;
+    font-weight: 600;
+}

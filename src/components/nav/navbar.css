@@ -1,14 +1,5 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 /* navbar */
-
-body{
-    background-color: #222;
-}
 
 .logo{
     width: 5%;
@@ -19,10 +10,11 @@ body{
 
 .nav{
     width: 100%;
-    background: linear-gradient(to right, #ffffff, rgb(201, 201, 201));
+    background: linear-gradient(to right, #ffffff, rgb(208, 203, 203));
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 10px;
 }
 
 .nav-menu{
