@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="body">
      <NavBar/>
-     <ItemListContainer name="Nike Air Max"/>
+     <ItemListContainer titulo="Nike Air Max"/>
      </div>
   );
 }
