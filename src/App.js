@@ -1,12 +1,13 @@
 import './body.css';
-import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 import NavBar from './components/nav/NavBar'
+import ItemListContainer from './components/ItemListContainer/ItemListContainer';
+import ItemCard from './components/ItemCard/ItemCard';
 
-function App() {
+const App = () => {
   return (
     <div className="body">
      <NavBar/>
-     <ItemListContainer titulo="Nike Air Max"/>
+     <ItemListContainer titulo="Nike shop"/>
      </div>
   );
 }
