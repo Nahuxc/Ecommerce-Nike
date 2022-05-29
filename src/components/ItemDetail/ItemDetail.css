@@ -1,15 +1,13 @@
 .box-ItemDetail{
     background-color: white;
     width: 60%;
-    margin: 20px auto;
+    margin: 50px auto;
     border-radius: 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
 
-.box-img{
-}
 
 .box-descripcion{
     width: 100%;
