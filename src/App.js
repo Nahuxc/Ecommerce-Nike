@@ -1,13 +1,14 @@
 import './body.css';
 import NavBar from './components/nav/NavBar'
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
-import ItemCard from './components/ItemCard/ItemCard';
+import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
 
 const App = () => {
   return (
     <div className="body">
      <NavBar/>
-     <ItemListContainer titulo="Nike shop"/>
+     <ItemListContainer titulo=""/>
+     <ItemDetailContainer/>
      </div>
   );
 }

@@ -1,0 +1,42 @@
+.box-ItemDetail{
+    background-color: white;
+    width: 60%;
+    margin: 20px auto;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.box-img{
+}
+
+.box-descripcion{
+    width: 100%;
+    padding: 20px;
+    padding: 30px;
+    background-color: #222;
+    color: white;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.img-detail{
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    margin-left: 130px;
+}
+
+.titulo-detail{
+    margin-bottom: 20px;
+}
+
+.descripcion-detail{
+    margin-bottom: 20px;
+}
+
+.precio-detail{
+    margin-bottom: 20px;
+    font-size: 30px;
+}

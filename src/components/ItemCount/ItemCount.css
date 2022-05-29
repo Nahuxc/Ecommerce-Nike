@@ -1,11 +1,16 @@
+.box-btnprod-aum{
+    display: flex;
+    justify-content: center;
+}
+
 .box-btnprod{
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
-    border-color: #ebebeb;
-    border-style: solid;
     display: flex;
     justify-content: space-between;
     text-align: center;
+    width: 200px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .btn-rest{
@@ -38,6 +43,5 @@
     justify-content: center;
     text-align: center;
     padding: 5px;
-    font-family: sans-serif;
     font-weight: 600;
 }

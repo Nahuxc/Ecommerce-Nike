@@ -19,16 +19,18 @@ const ItemCount = (props)=>{
 	};
 
     return(
-        <div className="box-btnprod">
-            <button className="btn-rest" onClick={onSubtraction}>
-                -
-            </button>
-                <span className="span-num-prod">
-                    {count}
-                </span>
-            <button className="btn-sum" onClick={onAdd}>
-                +
-            </button>
+        <div className="box-btnprod-aum">
+            <div className="box-btnprod">
+                <button className="btn-rest" onClick={onSubtraction}>
+                    -
+                </button>
+                    <span className="span-num-prod">
+                        {count}
+                    </span>
+                <button className="btn-sum" onClick={onAdd}>
+                    +
+                </button>
+            </div>
         </div>
     )
 }
