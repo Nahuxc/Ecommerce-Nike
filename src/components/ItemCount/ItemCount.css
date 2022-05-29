@@ -9,32 +9,32 @@
     display: flex;
     justify-content: space-between;
     text-align: center;
-    width: 200px;
+    width: 250px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .btn-rest{
-    background-color: hsl(208, 100%, 97%);
+    background-color: rgb(187, 224, 253);
     border: none;
-    border-radius: 5px;
     width: 30%;
     font-size: 15px;
     color: #0088ff;
     padding: 5px;
     font-family: sans-serif;
     font-weight: 800;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
 .btn-sum{
-    background-color: hsl(208, 100%, 97%);
+    background-color: rgb(187, 224, 253);
     border: none;
-    border-radius: 5px;
     width: 30%;
     padding: 5px;
     font-size: 15px;
     color: #0088ff;
     font-family: sans-serif;
     font-weight: 800;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .span-num-prod{
