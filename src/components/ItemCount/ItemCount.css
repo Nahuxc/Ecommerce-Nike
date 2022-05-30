@@ -14,29 +14,43 @@
 }
 
 .btn-rest{
-    background-color: rgb(187, 224, 253);
+    background-color: #e57603;
     border: none;
     width: 30%;
     font-size: 15px;
-    color: #0088ff;
+    border-radius: 10px 0px 0px 10px;
+    color: #ffffff;
     padding: 5px;
     font-family: sans-serif;
     font-weight: 800;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     cursor: pointer;
+    transition: all 500ms;
+}
+
+.btn-rest:hover{
+    background-color: #ffba3a;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .btn-sum{
-    background-color: rgb(187, 224, 253);
+    background-color: #e57603;
     border: none;
     width: 30%;
     padding: 5px;
+    border-radius: 0px 10px 10px 0px;
     font-size: 15px;
-    color: #0088ff;
+    color: #ffffff;
     font-family: sans-serif;
     font-weight: 800;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     cursor: pointer;
+    transition: all 500ms;
+}
+
+.btn-sum:hover{
+    background-color: #ffba3a;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .span-num-prod{

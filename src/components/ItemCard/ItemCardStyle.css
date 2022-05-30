@@ -35,7 +35,7 @@
 
 .btn-buy{
     border: none;
-    background-color: #1e90ff;
+    background-color: #e57603;
     width: 90%;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
@@ -43,8 +43,14 @@
     font-size: 15px;
     padding: 15px;
     text-align: center;
-    border-radius: 5px;
+    border-radius: 20px;
     cursor: pointer;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     cursor: pointer;
+    transition: all 500ms;
+}
+
+.btn-buy:hover{
+    background-color: #ffba3a;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
