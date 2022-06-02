@@ -1,6 +1,7 @@
 .box-ItemDetail{
     background-color: white;
-    width: 60%;
+    width: 80%;
+    height: 800px;
     margin: 50px auto;
     border-radius: 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -11,30 +12,35 @@
 
 .box-descripcion{
     width: 100%;
-    padding: 20px;
-    padding: 30px;
+    padding: 50px;
     background-color: #222;
     color: white;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .img-detail{
+    margin-top: 80px;
     justify-content: center;
     align-items: center;
-    width: 300px;
-    margin-left: 130px;
+    width: 600px;
+    margin-left: 120px;
 }
 
 .titulo-detail{
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    font-size: 40px;
 }
 
 .descripcion-detail{
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    font-size: 20px;
 }
 
 .precio-detail{
-    margin-bottom: 20px;
-    font-size: 30px;
+    margin-bottom: 35px;
+    font-size: 35px;
 }
