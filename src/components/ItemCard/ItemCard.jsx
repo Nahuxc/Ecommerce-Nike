@@ -5,7 +5,6 @@ import { Link } from 'react-router-dom'
 
 const ItemCard = ({id, name, precio, img, stock, talla}) => {
     return (
-      <div className='section'>
         <div className='contenedor-card'>
             <div className='card'>
                 <div className='imgbx'>
@@ -38,7 +37,6 @@ const ItemCard = ({id, name, precio, img, stock, talla}) => {
                 </div>
             </div>
         </div>
-      </div>
   )
 }
 

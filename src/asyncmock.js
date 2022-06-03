@@ -36,7 +36,7 @@ const products = [
         precio: "ARS$ 8.245",
         img: "https://cdn.shopify.com/s/files/1/0515/6379/0508/products/air-jordan-1-mid-white-black-royal-554724-140_1_1800x1800_b2a03456-fb02-4575-a0bd-44edb7228acb_600x.png?v=1627981074",
         stock: 5,
-        talla: ["38","39","40","41"],
+        talla: ["37","38","40","42"],
         descripcion: "Las zapatillas Nike Jordan Air  Low se destacan por un diseño que fusiona por un lado su exterior que combina la piel natural y sintética proporcionando una mejor sujeción donde más se necesita y, por otro lado, su media suela gruesa cuenta con la tecnología Air que te proporciona más altura con una forma disruptiva en su mitad con forma de olas para que sientas confort y estilo en cada paso."
     },
     {
@@ -45,8 +45,58 @@ const products = [
         categoria: "Air",
         precio: "ARS$ 12.245",
         img: "https://www.mgsports.cl/wp-content/uploads/2020/01/zapatillas-nike-training-600x600.png",
-        stock: 12,
+        stock: 16,
         talla: ["38","39","40","41"],
+        descripcion: "Las zapatillas Nike Sneakers Low se destacan por un diseño que fusiona por un lado su exterior que combina la piel natural y sintética proporcionando una mejor sujeción donde más se necesita y, por otro lado, su media suela gruesa cuenta con la tecnología Air que te proporciona más altura con una forma disruptiva en su mitad con forma de olas para que sientas confort y estilo en cada paso."
+    },
+    {
+        id: "6",
+        name: "Nike Roshe G",
+        categoria: "Roshe",
+        precio: "ARS$ 8.545",
+        img: "https://www.golfshop.de/media/image/99/34/77/CD6066-003-PHSRH001-2000vBjl8yT8rt0tk_600x600.png",
+        stock: 13,
+        talla: ["38","39","40","42"],
+        descripcion: "Las zapatillas Nike Sneakers Low se destacan por un diseño que fusiona por un lado su exterior que combina la piel natural y sintética proporcionando una mejor sujeción donde más se necesita y, por otro lado, su media suela gruesa cuenta con la tecnología Air que te proporciona más altura con una forma disruptiva en su mitad con forma de olas para que sientas confort y estilo en cada paso."
+    },
+    {
+        id: "7",
+        name: "Nike Air Max 200",
+        categoria: "Air",
+        precio: "ARS$ 21.245",
+        img: "https://www.courir.es/dw/image/v2/BCCL_PRD/on/demandware.static/-/Sites-master-catalog-courir/default/dw34f37f50/images/hi-res/001495050_101.png?sw=600&sh=600&sm=fit",
+        stock: 18,
+        talla: ["38","39","40","42"],
+        descripcion: "Las zapatillas Nike Sneakers Low se destacan por un diseño que fusiona por un lado su exterior que combina la piel natural y sintética proporcionando una mejor sujeción donde más se necesita y, por otro lado, su media suela gruesa cuenta con la tecnología Air que te proporciona más altura con una forma disruptiva en su mitad con forma de olas para que sientas confort y estilo en cada paso."
+    },
+    {
+        id: "8",
+        name: "UK's Latest Air Jordan",
+        categoria: "Jordan",
+        precio: "ARS$ 18.780",
+        img: "https://cdn.shopify.com/s/files/1/0515/6379/0508/products/air-jordan-1-mid-gs-coral-chalk-rush-pink-554725-662_1_900x900_07b5c517-d6da-4f2b-b559-261e6ba8202f_600x.png?v=1633624316",
+        stock: 22,
+        talla: ["38","39","40","42"],
+        descripcion: "Las zapatillas Nike Sneakers Low se destacan por un diseño que fusiona por un lado su exterior que combina la piel natural y sintética proporcionando una mejor sujeción donde más se necesita y, por otro lado, su media suela gruesa cuenta con la tecnología Air que te proporciona más altura con una forma disruptiva en su mitad con forma de olas para que sientas confort y estilo en cada paso."
+    },
+    {
+        id: "9",
+        name: "Nike Roshe Red Native",
+        categoria: "Roshe",
+        precio: "ARS$ 15.600",
+        img: "https://static.runnea.com/images/202105/asics-gel-kayano-28-3-1024x1024x80.png?1",
+        stock: 40,
+        talla: ["38","39","40","42"],
+        descripcion: "Las zapatillas Nike Sneakers Low se destacan por un diseño que fusiona por un lado su exterior que combina la piel natural y sintética proporcionando una mejor sujeción donde más se necesita y, por otro lado, su media suela gruesa cuenta con la tecnología Air que te proporciona más altura con una forma disruptiva en su mitad con forma de olas para que sientas confort y estilo en cada paso."
+    },
+    {
+        id: "10",
+        name: "Nike Roshe RunAllDay",
+        categoria: "Roshe",
+        precio: "ARS$ 5.600",
+        img: "https://scalasport.com.co/rails/active_storage/representations/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBd0NNYnc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--86a492937b7550939c8ce0594e9f13128d80abc3/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCam9TY21WemFYcGxYM1J2WDJacGRGc0hhUUpZQW1rQ1dBST0iLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--361554d0b7dd92546ceda39454543fcece989fd5/CD0223007%201.png?locale=en",
+        stock: 24,
+        talla: ["38","39","40","42"],
         descripcion: "Las zapatillas Nike Sneakers Low se destacan por un diseño que fusiona por un lado su exterior que combina la piel natural y sintética proporcionando una mejor sujeción donde más se necesita y, por otro lado, su media suela gruesa cuenta con la tecnología Air que te proporciona más altura con una forma disruptiva en su mitad con forma de olas para que sientas confort y estilo en cada paso."
     }
 ]
