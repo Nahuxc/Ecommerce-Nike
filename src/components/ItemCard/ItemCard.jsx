@@ -15,7 +15,7 @@ const ItemCard = ({id, name, precio, img, stock}) => {
                 <div className='contenido'>
                   <p className="price-prod"> {precio}</p>
                       <div className='tallas'>
-                          <h3>Size :</h3>
+                          <h3>Talla :</h3>
                               <span>38</span>
                               <span>39</span>
                               <span>40</span>
