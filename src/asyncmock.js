@@ -1,5 +1,6 @@
 const products = [
     {
+        img2:"https://centralsport.online/media/catalog/product/cache/10f519365b01716ddb90abc57de5a837/B/Q/BQ3204-400-zapatillas-baratas-nike-correr-revolution-5-hombre-azul-1.png",
         id: "1",
         name: "Nike Air Zoom SuperRep 2",
         categoria: "Air",
