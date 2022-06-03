@@ -3,7 +3,7 @@ import "./ItemCard.css"
 import ItemCount from '../ItemCount/ItemCount'
 import { Link } from 'react-router-dom'
 
-const ItemCard = ({id, name, precio, img, stock}) => {
+const ItemCard = ({id, name, precio, img, stock, talla}) => {
     return (
       <div className='section'>
         <div className='contenedor-card'>
@@ -16,10 +16,10 @@ const ItemCard = ({id, name, precio, img, stock}) => {
                   <p className="price-prod"> {precio}</p>
                       <div className='tallas'>
                           <h3>Talla :</h3>
-                              <span>38</span>
-                              <span>39</span>
-                              <span>40</span>
-                              <span>41</span>
+                              <span>{talla[0]}</span>
+                              <span>{talla[1]}</span>
+                              <span>{talla[2]}</span>
+                              <span>{talla[3]}</span>
                       </div>
                       <div className='zapatillas-colores'>
                           <h3>Color :</h3>
