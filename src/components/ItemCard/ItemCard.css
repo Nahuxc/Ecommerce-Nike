@@ -26,7 +26,7 @@
 }
 
 .contenedor-card .card:hover{
-    background: linear-gradient(to right, #ffbb9c, #ffbb9c);
+    background: linear-gradient(to right, #ffffff, #ffbb9c);
 }
 
 .contenedor-card .card .imgbx{
@@ -50,7 +50,7 @@
 /* efecto de rotacion */
 
 .contenedor-card .card:hover .imgbx{
-    transform: translateY(-230px);
+    transform: translateY(-170px);
 }
 
 /* efecto de rotacion */

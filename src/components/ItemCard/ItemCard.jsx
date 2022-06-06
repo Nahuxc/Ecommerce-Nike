@@ -1,6 +1,5 @@
 import React from 'react'
 import "./ItemCard.css"
-import ItemCount from '../ItemCount/ItemCount'
 import { Link } from 'react-router-dom'
 
 const ItemCard = ({id, name, precio, img, stock, talla}) => {
@@ -27,12 +26,8 @@ const ItemCard = ({id, name, precio, img, stock, talla}) => {
                               <span></span>
                               <span></span>
                       </div>
-                      <ItemCount initial="0" stock={stock}/>
                       <div className='box-btndetalle'>
                           <Link className='btn-detalle' to={`/detalle/${id}`}>Ver Detalle</Link>
-                      </div>
-                      <div className='box-btnbuy'>
-                          <button className='btn-buy'>Agregar Al Carrito</button>
                       </div>
                 </div>
             </div>
