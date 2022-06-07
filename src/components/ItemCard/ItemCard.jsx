@@ -2,7 +2,7 @@ import React from 'react'
 import "./ItemCard.css"
 import { Link } from 'react-router-dom'
 
-const ItemCard = ({id, name, precio, img, stock, talla}) => {
+const ItemCard = ({id, name, precio, img, talla}) => {
     return (
         <div className='contenedor-card'>
             <div className='card'>
@@ -36,3 +36,4 @@ const ItemCard = ({id, name, precio, img, stock, talla}) => {
 }
 
 export default ItemCard;
+
