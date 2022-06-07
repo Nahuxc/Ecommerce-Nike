@@ -98,6 +98,26 @@ const products = [
         stock: 24,
         talla: ["38","39","40","42"],
         descripcion: "Las zapatillas Nike Sneakers Low se destacan por un diseño que fusiona por un lado su exterior que combina la piel natural y sintética proporcionando una mejor sujeción donde más se necesita y, por otro lado, su media suela gruesa cuenta con la tecnología Air que te proporciona más altura con una forma disruptiva en su mitad con forma de olas para que sientas confort y estilo en cada paso."
+    },
+    {
+        id: "12",
+        name: "Jordan Air 1 Mid",
+        categoria: "Jordan",
+        precio: "ARS$ 15.600",
+        img: "https://static.runnea.com/images/202106/88/jordan-air-1-mid-se-840xXx90.png?1",
+        stock: 35,
+        talla: ["38","39","40","42"],
+        descripcion: "Las zapatillas Nike Jordan Air 1 Mid se destacan por un diseño que fusiona por un lado su exterior que combina la piel natural y sintética proporcionando una mejor sujeción donde más se necesita y, por otro lado, su media suela gruesa cuenta con la tecnología Air que te proporciona más altura con una forma disruptiva en su mitad con forma de olas para que sientas confort y estilo en cada paso."
+    },
+    {
+        id: "13",
+        name: "Nike Air Max Night Maroon",
+        categoria: "Air",
+        precio: "ARS$ 13.650",
+        img: "https://i.ebayimg.com/images/g/DQEAAOSwuSlhoQ9L/s-l600.png",
+        stock: 15,
+        talla: ["38","39","40","42"],
+        descripcion: "Las zapatillas Nike Sneakers Low se destacan por un diseño que fusiona por un lado su exterior que combina la piel natural y sintética proporcionando una mejor sujeción donde más se necesita y, por otro lado, su media suela gruesa cuenta con la tecnología Air que te proporciona más altura con una forma disruptiva en su mitad con forma de olas para que sientas confort y estilo en cada paso."
     }
 ]
 

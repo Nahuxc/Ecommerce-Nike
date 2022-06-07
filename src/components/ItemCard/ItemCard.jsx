@@ -19,13 +19,6 @@ const ItemCard = ({id, name, precio, img, talla}) => {
                               <span>{talla[2]}</span>
                               <span>{talla[3]}</span>
                       </div>
-                      <div className='zapatillas-colores'>
-                          <h3>Color :</h3>
-                              <span></span>
-                              <span></span>
-                              <span></span>
-                              <span></span>
-                      </div>
                       <div className='box-btndetalle'>
                           <Link className='btn-detalle' to={`/detalle/${id}`}>Ver Detalle</Link>
                       </div>
