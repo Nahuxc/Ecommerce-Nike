@@ -1,0 +1,18 @@
+.box-cart{
+    margin: 150px auto;
+    padding: 10px;
+}
+
+.box-cart h2{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-size: 35px;
+}
+
+.cart{
+    margin-bottom: 10px;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-around;
+}

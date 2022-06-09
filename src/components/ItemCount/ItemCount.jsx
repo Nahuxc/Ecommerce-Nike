@@ -4,6 +4,9 @@ import { useState } from "react";
 
 const ItemCount = ({stock, initial=1, onAdd})=>{
 
+
+
+
     const [count, setCount] = useState(parseInt(initial));
 
     const onIncrement = () => {
