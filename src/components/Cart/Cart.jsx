@@ -5,7 +5,7 @@ import "./Cart.css"
 
 const Cart = () => {
 
-  const {cart, removeItem} = useContext(CartContext)
+  const {cart, removeItem, vaciar} = useContext(CartContext)
 
   return (
     <div className="box-cart">
@@ -19,6 +19,9 @@ const Cart = () => {
                  <div>Precio x uni: ${prod.precio} </div>
                  <div>SubTotal: ${prod.precio * prod.Quantity} </div>
                  <button onClick={()=> removeItem(prod.id)}>Eliminar</button>
+                 <div>
+                    <button onClick={()=> vaciar()}>vaciar</button>
+                 </div>
                </div>
              )})
            }

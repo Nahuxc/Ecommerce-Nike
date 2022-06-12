@@ -7,35 +7,35 @@ const ItemCount = ({stock, initial=1, onAdd})=>{
 
 
 
-    const [count, setCount] = useState(parseInt(initial));
+    const [Quantity, SetQuantity] = useState(parseInt(initial));
 
     const onIncrement = () => {
-		if (count < stock) {
-			setCount(count + 1);
+		if (Quantity < stock) {
+			SetQuantity(Quantity + 1);
 		}
 	};
 
 	const onSubtraction = () => {
-		if (count > initial) {
-			setCount(count - 1);
+		if (Quantity > 1) {
+			SetQuantity(Quantity - 1);
 		}
 	};
 
     return(
-        <div className="">
+        <div>
             <div className="box-btnprod">
                 <button className="btn-rest" onClick={onSubtraction}>
                     -
                 </button>
                     <span className="span-num-prod">
-                        {count}
+                        {Quantity}
                     </span>
                 <button className="btn-sum" onClick={onIncrement}>
                     +
                 </button>
             </div>
             <div className='box-btnbuy'>
-              <button className='btn-buy' onClick={()=> onAdd(count) } >Agregar Al Carrito</button>
+              <button className='btn-buy' onClick={()=> onAdd(Quantity) } >Agregar Al Carrito</button>
             </div>
         </div>
     )

@@ -1,5 +1,5 @@
 import React from 'react'
-import { useState, useEffect } from 'react'
+import { useState, useEffect, } from 'react'
 import { getProductsId } from "../../asyncmock"
 import ItemDetail from '../ItemDetail/ItemDetail'
 import { useParams } from 'react-router-dom'
@@ -19,13 +19,16 @@ const ItemDetailContainer = () => {
     getProductsId(productId).then(response => {
       setProduct(response)
     }).finally(() =>{
-      setLoading(false)
+      setLoading(false, 2500)
     })
   }, [productId])
 
 
   if(loading){
-    return <h1>Cargando...</h1>
+    return <div className='loading'>
+      <img src="https://www.wsj.com/coupons/static/shop/32174/logo/Nike-coupons.png" alt="logo-nike" />
+      <h1 >Cargando...</h1>
+    </div>
   }
 
   return (

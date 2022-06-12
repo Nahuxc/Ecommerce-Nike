@@ -73,7 +73,7 @@ const products = [
         id: "8",
         name: "UK's Latest Air Jordan",
         categoria: "Jordan",
-        precio: 18.780,
+        precio: 18780,
         img: "https://cdn.shopify.com/s/files/1/0515/6379/0508/products/air-jordan-1-mid-gs-coral-chalk-rush-pink-554725-662_1_900x900_07b5c517-d6da-4f2b-b559-261e6ba8202f_600x.png?v=1633624316",
         stock: 22,
         talla: ["38","39","40","42"],
