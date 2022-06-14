@@ -5,12 +5,14 @@ import "./Cart.css"
 
 const Cart = () => {
 
-  const {cart, removeItem, vaciar} = useContext(CartContext)
+  const {cart, removeItem, vaciar, precioTotal, getQuantity} = useContext(CartContext)
+
+  const Quantity = getQuantity()
 
   return (
     <div className="box-cart">
         <h2>Carrito</h2>
-        <div >
+        {Quantity > 0 ? <div>
            {cart.map(prod => {
              return(
                <div key={prod.id} className="cart">
@@ -19,13 +21,13 @@ const Cart = () => {
                  <div>Precio x uni: ${prod.precio} </div>
                  <div>SubTotal: ${prod.precio * prod.Quantity} </div>
                  <button onClick={()=> removeItem(prod.id)}>Eliminar</button>
-                 <div>
-                    <button onClick={()=> vaciar()}>vaciar</button>
-                 </div>
                </div>
              )})
-           }
-        </div>
+            }
+            <div>Total: ${precioTotal()} </div>
+            <button>Finalizar Compra</button>
+            <button onClick={()=> vaciar()}>vaciar</button>
+        </div> : <span>Carrito Vacio</span>}
     </div>
   )
 }
