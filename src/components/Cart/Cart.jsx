@@ -11,7 +11,9 @@ const Cart = () => {
 
   return (
     <div className="box-cart">
+      <div className="box-titulo">
         <h2>Carrito</h2>
+      </div>
         {Quantity > 0 ? <div>
            {cart.map(prod => {
              return(
@@ -20,14 +22,22 @@ const Cart = () => {
                  <div>Cantidad: {prod.Quantity}</div>
                  <div>Precio x uni: ${prod.precio} </div>
                  <div>SubTotal: ${prod.precio * prod.Quantity} </div>
-                 <button onClick={()=> removeItem(prod.id)}>Eliminar</button>
+                 <button className="btn-eliminar" onClick={()=> removeItem(prod.id)}>Eliminar</button>
                </div>
              )})
             }
-            <div>Total: ${precioTotal()} </div>
-            <button>Finalizar Compra</button>
-            <button onClick={()=> vaciar()}>vaciar</button>
-        </div> : <span>Carrito Vacio</span>}
+            <div className="total-precio">Total: ${precioTotal()} </div>
+            <div className="box-btns">
+              <div className="box-btnvaciar">
+                <button className="btn-vaciar" onClick={()=> vaciar()}>Vaciar</button>
+              </div>
+              <div className="box-btnfisish">
+                <button className="btn-finish">Finalizar Compra</button>
+              </div>
+            </div>
+        </div> : <div className="box-cart-vacio">
+          <span className="cart-vacio-titulo">Carrito Vacio</span>
+          </div>}
     </div>
   )
 }
