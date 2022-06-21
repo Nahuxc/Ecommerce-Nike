@@ -5,10 +5,7 @@ import { useState, useContext } from "react"
 import { Link } from "react-router-dom"
 import CartContext from "../Context/CartContext"
 
-
-
 const ItemDetail = ({id, name, precio, img, descripcion, stock}) => {
-
 
   const [Quantity, SetQuantity] = useState(0)
 

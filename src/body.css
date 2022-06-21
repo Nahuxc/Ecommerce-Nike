@@ -26,3 +26,10 @@ a{
     text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.5);
 }
 
+.box-orders{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    margin-top: 400px;
+    margin-left: 600px;
+}

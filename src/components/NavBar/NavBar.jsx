@@ -18,12 +18,12 @@ const NavBar = () => {
                 <img className="logo" src="https://www.wsj.com/coupons/static/shop/32174/logo/Nike-coupons.png" alt="logo-nike"></img>
             </Link>
             <ul className="nav-menu">
-                <li className="nav-menu_li"> <Link className="link-a" to="/">Inicio</Link></li>
-                <li className="nav-menu_li"> <Link className="link-a" to="/Air">Nike Air</Link></li>
-                <li className="nav-menu_li"> <Link className="link-a" to="/Jordan">Nike Jordan</Link></li>
-                <li className="nav-menu_li"> <Link className="link-a" to="/Roshe">Nike Roshe</Link></li>
+                <li className="nav-menu_li"><Link className="link-a" to="/">Inicio</Link></li>
+                <li className="nav-menu_li"><Link className="link-a" to="/Air">Nike Air</Link></li>
+                <li className="nav-menu_li"><Link className="link-a" to="/Jordan">Nike Jordan</Link></li>
+                <li className="nav-menu_li"><Link className="link-a" to="/Roshe">Nike Roshe</Link></li>
             </ul>
-            <button className="btn-interaz"><i className="fa-solid fa-user"></i></button>
+            <Link className="btn-interaz" to="/usuario"><i className="fa-solid fa-user"></i></Link>
             {Quantity > 0 && <CartWidget />}
         </nav>
     );

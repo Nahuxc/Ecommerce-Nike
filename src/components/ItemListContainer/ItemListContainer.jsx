@@ -9,8 +9,6 @@ const ItemListContainer = () =>{
     const [products, setProducts] = useState([])
     const [loading, setLoading] = useState(true)
 
-
-
     const {categoriaId} = useParams()
 
     useEffect(() => {
