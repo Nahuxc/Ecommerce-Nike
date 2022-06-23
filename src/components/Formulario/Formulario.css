@@ -1,3 +1,111 @@
+.box-orders{
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  margin: 150px auto;
+  text-align: center;
+  align-items: center;
+}
+
+.btn-vl{
+    border: none;
+    background-color: #e57603;
+    width: 200px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 1.5);
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 500ms;
+}
+
+.btn-vl:hover{
+  background-color: #ffba3a;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+
+.box-btnvl{
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  text-align: center;
+  align-items: center;
+}
+
+.codigo-id{
+  margin-top: 20px;
+  font-size: 25px;
+  background-color: rgb(171, 167, 167);
+  border-radius: 5px;
+  width: 45%;
+  justify-content: center;
+  padding: 10px;
+  color: white;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 1.5);
+  margin-bottom: 10px;
+}
+
+
+.cart-formLink{
+  text-decoration: none;
+  color: white;
+  justify-content: center;
+}
+
+.cart-form{
+  margin: 20px auto;
+  width: 30%;
+  padding: 10px;
+  background: #333;
+  border-radius: 15px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  transition: all 500ms;
+  cursor: pointer;
+}
+
+.cart-form:hover{
+  background-color: #e57603;
+}
+
+.box-form h2{
+  margin: 0 auto;
+  width: 30%;
+  padding: 10px;
+  background: #333;
+  border-radius: 15px;
+  margin-top: 120px;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 1.5);
+  font-size: 40px;
+}
+
+.box-form h3{
+  margin: 0 auto;
+  width: 30%;
+  padding: 10px;
+  background: #333;
+  border-radius: 20px;
+  margin-top: 15px;
+  font-size: 20px;
+  color: white;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 1.5);
+}
+
 form {
     max-width: 800px;
     margin: 0 auto;
@@ -14,9 +122,9 @@ form {
   }
   
   form {
-    background: #757a95;
+    background: #333;
     max-width: 600px;
-    margin-top: 150px;
+    margin-top: 30px;
   }
   
   form p {
@@ -51,12 +159,15 @@ form {
   }
 
   form button{
-    background-color: #bf1650;
+    background-color: #e57603;
     color: white;
     border-radius: 10px;
     border: none;
     padding: 10px;
     cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
   }
   
   .App {

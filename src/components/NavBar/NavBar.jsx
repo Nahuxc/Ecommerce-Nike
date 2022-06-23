@@ -23,7 +23,7 @@ const NavBar = () => {
                 <li className="nav-menu_li"><Link className="link-a" to="/Jordan">Nike Jordan</Link></li>
                 <li className="nav-menu_li"><Link className="link-a" to="/Roshe">Nike Roshe</Link></li>
             </ul>
-            <Link className="btn-interaz" to="/usuario"><i className="fa-solid fa-user"></i></Link>
+            {Quantity > 0 && <Link className="btn-interaz" to="/usuario"><i class="fa-solid fa-paper-plane"></i></Link>}
             {Quantity > 0 && <CartWidget />}
         </nav>
     );

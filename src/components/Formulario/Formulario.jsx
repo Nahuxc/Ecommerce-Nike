@@ -1,8 +1,9 @@
+import React, { useContext, useState } from "react";
 import { db } from "../../service/firebase";
 import { addDoc, collection, Timestamp } from "firebase/firestore";
-import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import CartContext from "../Context/CartContext";
+import Loader from "../Loader/Loader";
 import "./Formulario.css"
 
 const OrdenFinal = () => {
@@ -39,22 +40,28 @@ const OrdenFinal = () => {
                 setFormData({ name: "", email: "", phone: "" });
                 vaciar()
             })
+
     };
+
+
+
     return (
         <div>
-            <div >
+            <div className="box-form">
                 {creatingOrder ? (
-                    <div>
-                    </div>
+                  <Loader/>
                 ) : orderId ? (
                     <div className=" box-orders">
-                        {orderId && <h1>Codigo de Orden ID: {orderId }</h1>}
-                        <Link to="/">
-                            <button>Volver al inicio</button>
+                        <h2 className="titulo-id">Tu compra Se Realizo Con Exito</h2>
+                        {orderId && <h1 className="codigo-id">Aca Tu Codigo de Orden ID: {orderId }</h1>}
+                        <Link className="box-btnvl" to="/">
+                            <button className="btn-vl">Volver al inicio</button>
                         </Link>
                     </div>
                 ) : (
                     <div>
+                        <h2>Formulario de compra</h2>
+                        <h3>Completa Con Tus Datos Y Finaliza Tu Compra</h3>
                         <form
                             onSubmit={sendOrder}
                             onChange={handleChange}
@@ -97,8 +104,12 @@ const OrdenFinal = () => {
                                 Confirmar Compra
                             </button>
                         </form>
+                        <div className="cart-form">
+                            <Link className="cart-formLink" to="/cart"><i className="fa-solid fa-cart-shopping"> Ver Carrito </i></Link>
+                        </div>
                     </div>
                 )}
+                
             </div>
         </div >
     )

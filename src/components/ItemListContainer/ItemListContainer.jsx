@@ -1,8 +1,9 @@
-import { useState, useEffect } from "react";
-import ItemList from "../ItemList/ItemList";
-import { useParams } from "react-router-dom";
-import { getDocs, collection, query, where } from "firebase/firestore";
 import { db } from "../../service/firebase";
+import { getDocs, collection, query, where } from "firebase/firestore";
+import { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
+import ItemList from "../ItemList/ItemList";
+import Loader from "../Loader/Loader";
 
 const ItemListContainer = () =>{
 
@@ -25,16 +26,13 @@ const ItemListContainer = () =>{
         }).catch(e => {
             console.log(e)
         }).finally(() =>{
-          setLoading(false, 2500)
+          setLoading(false, 2000)
         })
     }, [categoriaId])
 
     if(loading){
-        return <div className='loading'>
-          <img src="https://www.wsj.com/coupons/static/shop/32174/logo/Nike-coupons.png" alt="logo-nike" />
-          <h1 >Cargando...</h1>
-        </div>
-      }
+        return <Loader/>
+    }
 
     return(
         <div>

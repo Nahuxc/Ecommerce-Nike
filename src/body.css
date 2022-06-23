@@ -13,18 +13,7 @@ a{
     text-decoration: none;
 }
 
-.loading{
-    margin: 0 auto;
-    margin-top: 100px;
-    padding: 100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    color: white;
-    text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.5);
-}
+
 
 .box-orders{
     flex-direction: column;
@@ -32,4 +21,9 @@ a{
     justify-content: center;
     margin-top: 400px;
     margin-left: 600px;
+}
+
+.advert{
+    margin-top: 200px;
+    justify-content: center;
 }

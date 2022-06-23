@@ -22,7 +22,7 @@ const App = () => {
                 <Route path='/detalle/:productId' element={<ItemDetailContainer/>}/>
                 <Route path='/cart' element={<Cart/>}/>
                 <Route path='/usuario' element={<Formulario/>}/>
-                <Route path='*' element={<h1>PAGE NOT FOUND 404</h1>}/>
+                <Route path='*' element={<h1 className='advert'>PAGE NOT FOUND 404</h1>}/>
               </Routes>
             </BrowserRouter>
           </CartContextProvider>

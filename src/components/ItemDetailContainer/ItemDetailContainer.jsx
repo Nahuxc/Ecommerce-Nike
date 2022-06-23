@@ -1,9 +1,10 @@
 import React from 'react'
 import { useState, useEffect, } from 'react'
-import ItemDetail from '../ItemDetail/ItemDetail'
 import { useParams } from 'react-router-dom'
 import { db } from '../../service/firebase'
 import { getDoc, doc } from 'firebase/firestore'
+import ItemDetail from '../ItemDetail/ItemDetail'
+import Loader from "../Loader/Loader";
 
 
 const ItemDetailContainer = () => {
@@ -28,10 +29,7 @@ const ItemDetailContainer = () => {
 
 
   if(loading){
-    return <div className='loading'>
-      <img src="https://www.wsj.com/coupons/static/shop/32174/logo/Nike-coupons.png" alt="logo-nike" />
-      <h1 >Cargando...</h1>
-    </div>
+    <Loader/>
   }
 
   return (

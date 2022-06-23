@@ -47,7 +47,7 @@ const Cart = () => {
         })
     }).then(()=>{
         if(outOfStock.length === 0){
-            const collectionRef = collection(db, "products")
+            const collectionRef = collection(db, "orders")
 
             return addDoc(collectionRef, objOrder)
         }else{

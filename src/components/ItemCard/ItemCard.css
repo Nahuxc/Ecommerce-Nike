@@ -21,7 +21,7 @@
     background: linear-gradient(to right, #ffffff, rgba(227, 222, 222, 0.657));
     backdrop-filter: blur(15px);
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 10px rgba(117, 93, 79, 0.3);
     transition: 0.5s ease-in-out;
 }
 
@@ -227,5 +227,28 @@ background-color: #a9aaab;
 
 .btn-detalle:hover{
     background-color: #ffba3a;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.btn-stock{
+    border: none;
+    background-color: #fc5252;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: white;
+    font-size: 15px;
+    padding: 10px;
+    text-align: center;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 1.5);
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 500ms;
+}
+
+.btn-stock:hover{
+    background-color: #fc0a0a;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
