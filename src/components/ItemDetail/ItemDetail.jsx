@@ -12,9 +12,7 @@ const ItemDetail = ({id, name, precio, img, descripcion, stock}) => {
   const {addItem, getProduct } = useContext(CartContext)
 
   const handleOnAdd = (Quantity) =>{
-    console.log(`agregaste al carrito = ${Quantity}`)
     SetQuantity(Quantity)
-
     addItem({id, name, precio, Quantity})
   }
 

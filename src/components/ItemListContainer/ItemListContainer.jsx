@@ -23,8 +23,6 @@ const ItemListContainer = () =>{
                 return {id: doc.id, ...doc.data()}
             })
             setProducts(products)
-        }).catch(e => {
-            console.log(e)
         }).finally(() =>{
           setLoading(false, 2000)
         })

@@ -4,7 +4,6 @@ import "./ItemList.css"
 
 
 const ItemList = ({products}) => {
-  console.log(products)
   return (
       <div className="box-itemlist">
         {products.map(products => <Itemcard key={products.id} {...products}/>)}
