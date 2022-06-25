@@ -7,6 +7,7 @@ import Formulario from './components/Formulario/Formulario';
 import Cart from './components/Cart/Cart';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { CartContextProvider } from './components/Context/CartContext';
+import { NotificationProvider } from './Notification/notification';
 
 const App = () => {
 
@@ -14,17 +15,19 @@ const App = () => {
   return (
       <div className="body">
         <CartContextProvider>
-            <BrowserRouter>
-              <NavBar/>
-              <Routes>
-                <Route path='/' element={<ItemListContainer/>}/>
-                <Route path='/:categoriaId' element={<ItemListContainer/>}/>
-                <Route path='/detalle/:productId' element={<ItemDetailContainer/>}/>
-                <Route path='/cart' element={<Cart/>}/>
-                <Route path='/usuario' element={<Formulario/>}/>
-                <Route path='*' element={<h1 className='advert'>PAGE NOT FOUND 404</h1>}/>
-              </Routes>
-            </BrowserRouter>
+          <NotificationProvider>
+              <BrowserRouter>
+                <NavBar/>
+                <Routes>
+                  <Route path='/' element={<ItemListContainer/>}/>
+                  <Route path='/:categoriaId' element={<ItemListContainer/>}/>
+                  <Route path='/detalle/:productId' element={<ItemDetailContainer/>}/>
+                  <Route path='/cart' element={<Cart/>}/>
+                  <Route path='/usuario' element={<Formulario/>}/>
+                  <Route path='*' element={<h1 className='advert'>PAGE NOT FOUND 404</h1>}/>
+                </Routes>
+              </BrowserRouter>
+            </NotificationProvider>
           </CartContextProvider>
       </div>
   );

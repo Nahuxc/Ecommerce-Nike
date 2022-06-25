@@ -6,6 +6,8 @@ const ItemCount = ({stock, initial=1, onAdd})=>{
 
     const [Quantity, SetQuantity] = useState(parseInt(initial));
 
+   
+
     const onIncrement = () => {
 		if (Quantity < stock) {
 			SetQuantity(Quantity + 1);
