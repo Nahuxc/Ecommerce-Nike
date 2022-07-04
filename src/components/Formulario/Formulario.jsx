@@ -104,9 +104,6 @@ const OrdenFinal = () => {
                                 Confirmar Compra
                             </button>
                         </form>
-                        <div className="cart-form">
-                            <Link className="cart-formLink" to="/cart"><i className="fa-solid fa-cart-shopping"> Ver Carrito </i></Link>
-                        </div>
                     </div>
                 )}
                 

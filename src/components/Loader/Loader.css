@@ -41,22 +41,22 @@
 }
 
 .loader :first-child{
-    background-color: #216ad6;
+    background-color: #d68421;
     animation-delay: -1.5s;
 }
 
 .loader :nth-child(2){
-    background-color: #ffd960;
+    background-color: #080807;
     animation-delay: -1s;
 }
 
 .loader :nth-child(3){
-    background-color: #d7415d;
+    background-color: #ec6816;
     animation-delay: -0.5s;
 }
 
 .loader :last-child{
-    background-color: #1f95f2;
+    background-color: #4a4b4b;
 }
 
 @keyframes spin {

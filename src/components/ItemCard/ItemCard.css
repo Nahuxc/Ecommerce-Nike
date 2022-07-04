@@ -252,3 +252,27 @@ background-color: #a9aaab;
     background-color: #fc0a0a;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
+
+.btn-follow{
+    border: none;
+    background-color: #e57603;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: white;
+    font-size: 15px;
+    padding: 10px;
+    margin-left: 20px;
+    text-align: center;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 1.5);
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 500ms;
+}
+
+.btn-follow:hover{
+    background-color: #ffba3a;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}

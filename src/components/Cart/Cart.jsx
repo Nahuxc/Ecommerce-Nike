@@ -25,7 +25,6 @@ const Cart = () => {
     }
 
     const ids = cart.map(prod => prod.id)
-    console.log(ids);
 
     const batch = writeBatch(db)
 

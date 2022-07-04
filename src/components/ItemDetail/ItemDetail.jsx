@@ -39,8 +39,14 @@ const ItemDetail = ({id, name, precio, img, descripcion, stock}) => {
                       </div>
                 </div>
             </div>
-          <div>
-              {Quantity > 0 ? <Link className="btn-detalle" to="/cart">Finalizar Compra</Link> : <ItemCount onAdd={handleOnAdd} stock={stock} initial={getProduct(id)?.Quantity} /> }
+          <div >
+              {Quantity > 0 ? (
+                <div>
+                  <Link className="btn-detalle" to="/cart">Finalizar Compra</Link>
+                  <Link className="btn-follow" to="/">Seguir Comprando</Link>
+                </div>
+              )
+              :<ItemCount onAdd={handleOnAdd} stock={stock} initial={getProduct(id)?.Quantity} />}
           </div>
         </div>
     </div>
