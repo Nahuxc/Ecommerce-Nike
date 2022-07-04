@@ -3,4 +3,4 @@
 Tienda De Zapatillas Nike
 
 ## Demostracion
-![Alt text](./public/EcommerceNike.mp4)
+![Alt text](./public/E-commerce-Nike.gif)
