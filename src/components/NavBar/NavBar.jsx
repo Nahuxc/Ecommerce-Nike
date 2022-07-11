@@ -1,9 +1,8 @@
-import React from "react";
-import "./NavBar.css"
-import CartWidget from "../CartWidget/CartWidget";
-import CartContext from "../Context/CartContext";
-import { Link } from "react-router-dom";
 import { useContext } from "react";
+import { Link } from "react-router-dom";
+import CartContext from "../Context/CartContext";
+import CartWidget from "../CartWidget/CartWidget";
+import "./NavBar.css"
 
 
 const NavBar = () => {

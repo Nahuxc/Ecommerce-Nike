@@ -1,7 +1,7 @@
 import React, { useContext, useState } from "react";
+import { Link } from "react-router-dom";
 import { db } from "../../service/firebase";
 import { addDoc, collection, Timestamp, getDocs, query, where, documentId, writeBatch } from "firebase/firestore";
-import { Link } from "react-router-dom";
 import CartContext from "../Context/CartContext";
 import Loader from "../Loader/Loader";
 import "./Formulario.css"
@@ -22,6 +22,7 @@ const OrdenFinal = () => {
             [e.target.name]: e.target.value
         });
     };
+
     const sendOrder = e => {
         e.preventDefault();
         setCreatingOrder(true);
@@ -32,6 +33,7 @@ const OrdenFinal = () => {
             items: cart,
             total: precioTotal()
         };
+
         const orderCollection = collection(db, "orders");
         addDoc(orderCollection, newOrder)
             .then(({ id }) => {
@@ -47,21 +49,15 @@ const OrdenFinal = () => {
             });
 
         const ids = cart.map(prod => prod.id)
-
         const outOfStock = []
-
         const batch = writeBatch(db)
-
         const collectionRef = collection(db, 'products')
 
         getDocs(query(collectionRef, where(documentId(),"in", ids)))
-
             .then(response =>{
                 response.docs.forEach(doc =>{
                     const dataDoc = doc.data()
-
                     const prodQuantity = cart.find(prod => prod.id === doc.id)?.Quantity
-
                     if(dataDoc.stock >= prodQuantity) {
                         batch.update(doc.ref, {stock: dataDoc.stock - prodQuantity})
                     } else{

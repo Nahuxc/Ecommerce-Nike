@@ -7,7 +7,6 @@ import "./Cart.css"
 const Cart = () => {
 
   const {cart, removeItem, vaciar, precioTotal, getQuantity} = useContext(CartContext)
-
   const Quantity = getQuantity()
 
   return (

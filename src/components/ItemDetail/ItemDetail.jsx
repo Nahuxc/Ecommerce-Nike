@@ -1,10 +1,10 @@
 
-import "./ItemDetail.css"
-import ItemCount from "../ItemCount/ItemCount"
 import { useState, useContext } from "react"
 import { Link } from "react-router-dom"
 import { useNotification } from "../../Notification/notification";
 import CartContext from "../Context/CartContext"
+import ItemCount from "../ItemCount/ItemCount"
+import "./ItemDetail.css"
 
 const ItemDetail = ({id, name, precio, img, descripcion, stock}) => {
 
