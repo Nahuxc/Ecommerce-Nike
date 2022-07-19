@@ -1,0 +1,15 @@
+.autor-copyright{
+    padding: 20px;
+    text-align: center;
+}
+.bar{
+    width: 90%;
+    margin: 10px auto;
+    background-color: #353535;
+    height: 5px;
+}
+.autor-copyright p {
+    font-size: 20px;
+    color: #353535;
+    margin-top: 20px;
+}
