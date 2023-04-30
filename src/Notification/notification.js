@@ -3,8 +3,8 @@ import { useState, createContext, useContext } from "react";
 const Notification = ({ message, severity }) => {
 
     const notificationStyles = {
-      position: 'absolute',
-      top: 2,
+      position: 'fixed',
+      top: 80,
       right: 1,
       width: 'auto',
       height: 'auto',

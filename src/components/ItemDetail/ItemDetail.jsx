@@ -41,7 +41,7 @@ const ItemDetail = ({id, name, precio, img, descripcion, stock}) => {
             </div>
           <div >
               {Quantity > 0 ? (
-                <div>
+                <div className="box-confirm">
                   <Link className="btn-detalle" to="/cart">Finalizar Compra</Link>
                   <Link className="btn-follow" to="/">Seguir Comprando</Link>
                 </div>

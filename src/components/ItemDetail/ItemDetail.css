@@ -23,12 +23,17 @@
     justify-content: center;
 }
 
+.box-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .img-detail{
-    margin-top: 80px;
+    display: flex;
     justify-content: center;
     align-items: center;
     width: 600px;
-    margin-left: 120px;
 }
 
 .titulo-detail{
@@ -55,7 +60,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 8px 20px;
 }
 
 .card .contenido .tallas h3,
